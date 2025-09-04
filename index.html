@@ -120,12 +120,6 @@
         
         .breakdown-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        
-        .breakdown-grid.breakdown-rows {
-            display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 20px;
@@ -229,7 +223,7 @@
         <div class="breakdown-section">
             <h2 class="breakdown-title">📈 Detailed Status Breakdown</h2>
             
-            <div class="breakdown-grid breakdown-rows">
+            <div class="breakdown-grid">
                 <div class="status-item">
                     <div class="status-label">✅ Pre-App Complete</div>
                     <div class="status-count">1 site</div>
