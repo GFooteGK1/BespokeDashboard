@@ -124,12 +124,25 @@
             gap: 15px;
         }
         
+        .breakdown-grid.breakdown-rows {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
         .status-item {
             background: #f3f4f6;
             border-radius: 16px;
             border-left: 5px solid #6366f1;
             padding: 18px;
             transition: box-shadow 0.2s, transform 0.2s;
+            min-height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
         
         .status-item:hover {
@@ -216,7 +229,7 @@
         <div class="breakdown-section">
             <h2 class="breakdown-title">📈 Detailed Status Breakdown</h2>
             
-            <div class="breakdown-grid">
+            <div class="breakdown-grid breakdown-rows">
                 <div class="status-item">
                     <div class="status-label">✅ Pre-App Complete</div>
                     <div class="status-count">1 site</div>
